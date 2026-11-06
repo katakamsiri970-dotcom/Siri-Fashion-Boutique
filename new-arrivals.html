@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Arrivals | SIRI FASHION BOUTIQUE</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #333;
+}
+
+header {
+    background: #e75480;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+nav {
+    background: #ffe0eb;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9d174d;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #e75480;
+}
+
+.heading {
+    text-align: center;
+    padding: 35px 15px 20px;
+}
+
+.heading h2 {
+    color: #c2185b;
+    font-size: 30px;
+}
+
+.heading p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 25px 6%;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
+    padding-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #c2185b;
+    margin: 15px 0 8px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #555;
+    margin: 8px;
+}
+
+.price {
+    color: #e75480;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 12px;
+}
+
+.badge {
+    display: inline-block;
+    background: #ffe0eb;
+    color: #c2185b;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.card a {
+    display: inline-block;
+    background: #e75480;
+    color: white;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 25px;
+    margin-top: 8px;
+}
+
+.card a:hover {
+    background: #ad1457;
+}
+
+footer {
+    background: #e75480;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+}
+
+@media (max-width: 500px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SIRI FASHION BOUTIQUE</h1>
+    <p>Discover Your New Style ❤️</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="kids.html">Kids</a>
+    <a href="new-arrivals.html">New Arrivals</a>
+    <a href="offers.html">Offers</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="heading">
+    <h2>✨ New Arrivals ✨</h2>
+    <p>Explore our latest fashion collections</p>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800"
+             alt="New Saree Collection">
+        <span class="badge">NEW ARRIVAL</span>
+        <h3>Designer Saree</h3>
+        <p>Elegant saree collection with beautiful designs.</p>
+        <div class="price">₹1,299</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+    <div class="card">
+<img src="https://docket.kartmax.in/sites/9s145MyZrWdIAwpU0JYS/product-images/beige_embroidered_and_sequins_work_silk_kurti_1768215712_AS3560572.jpg"
+             alt="New Kurti Collection">
+        <span class="badge">TRENDING</span>
+        <h3>Designer Kurti</h3>
+        <p>Trendy kurtis for a stylish everyday look.</p>
+        <div class="price">₹699</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=800"
+             alt="New Western Collection">
+        <span class="badge">JUST IN</span>
+        <h3>Western Dress</h3>
+        <p>Modern western outfits for every occasion.</p>
+        <div class="price">₹999</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800"
+             alt="New Party Wear">
+        <span class="badge">NEW STYLE</span>
+        <h3>Party Wear Gown</h3>
+        <p>Beautiful gowns for parties and celebrations.</p>
+        <div class="price">₹1,499</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800"
+             alt="New Men's Fashion">
+        <span class="badge">TRENDING</span>
+        <h3>Men's Fashion</h3>
+        <p>Fresh and stylish outfits for men.</p>
+        <div class="price">₹899</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=800"
+             alt="New Kids Fashion">
+        <span class="badge">JUST IN</span>
+        <h3>Kids Collection</h3>
+        <p>Adorable new outfits for little ones.</p>
+        <div class="price">₹599</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 SIRI FASHION BOUTIQUE | All Rights Reserved</p>
+    <p>Designed with Love by Siri Katakam ❤️</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special Offers | SIRI FASHION BOUTIQUE</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #333;
+}
+
+header {
+    background: #e75480;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+nav {
+    background: #ffe0eb;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9d174d;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #e75480;
+}
+
+.heading {
+    text-align: center;
+    padding: 35px 15px 20px;
+}
+
+.heading h2 {
+    color: #c2185b;
+    font-size: 32px;
+}
+
+.heading p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.banner {
+    background: linear-gradient(120deg, #e75480, #ff9ebc);
+    color: white;
+    text-align: center;
+    margin: 20px 6%;
+    padding: 35px 15px;
+    border-radius: 18px;
+}
+
+.banner h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 25px 6%;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
+    padding-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #c2185b;
+    margin: 15px 0 8px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #555;
+    margin: 8px;
+}
+
+.old-price {
+    color: #888;
+    text-decoration: line-through;
+    margin-top: 12px;
+}
+
+.price {
+    color: #e75480;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.discount {
+    display: inline-block;
+    background: #ffe0eb;
+    color: #c2185b;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card a {
+    display: inline-block;
+    background: #e75480;
+    color: white;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 25px;
+    margin-top: 12px;
+}
+
+.card a:hover {
+    background: #ad1457;
+}
+
+footer {
+    background: #e75480;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+}
+
+@media (max-width: 500px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SIRI FASHION BOUTIQUE</h1>
+    <p>Fashion at Amazing Prices ❤️</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="kids.html">Kids</a>
+    <a href="new-arrivals.html">New Arrivals</a>
+    <a href="offers.html">Offers</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="heading">
+    <h2>Special Offers & Discounts</h2>
+    <p>Shop your favourite styles at amazing prices!</p>
+</section>
+
+<section class="banner">
+    <h2>MEGA FASHION SALE</h2>
+    <p>Up to 50% OFF on selected collections</p>
+    <p>Refresh your wardrobe with SIRI FASHION BOUTIQUE!</p>
+</section>
+
+<section class="products">
+
+    <!-- Saree Offer -->
+    <div class="card">
+        <img src="https://images.textilecatalog.in/blog/Pick-Any-1-Kanjeevaram-Inspired-South-Silk-Saree-2.jpg"
+             alt="Saree Offer">
+        <h3>Designer Sarees</h3>
+        <p>Beautiful sarees for every special occasion.</p>
+        <div class="old-price">₹1,499</div>
+        <div class="price">₹999</div>
+        <div class="discount">33% OFF</div>
+        <br>
+        <a href="contact.html">Shop Now</a>
+    </div>
+
+    <!-- Kurti Offer -->
+    <div class="card">
+        <img src="https://docket.kartmax.in/sites/9s145MyZrWdIAwpU0JYS/product-images/beige_embroidered_and_sequins_work_silk_kurti_1768215712_AS3560572.jpg"
+             alt="Kurti Offer">
+        <h3>Designer Kurtis</h3>
+        <p>Elegant kurtis with beautiful designs.</p>
+        <div class="old-price">₹999</div>
+        <div class="price">₹699</div>
+        <div class="discount">30% OFF</div>
+        <br>
+        <a href="contact.html">Shop Now</a>
+    </div>
+
+    <!-- Western Offer -->
+    <div class="card">
+        <img src="https://sanvarifashion.com/images/product/sub_images/2025/04/saksham-op-21-22-western-dress-1-2025-04-22_17_30_56.jpeg"
+             alt="Western Wear Offer">
+        <h3>Western Wear</h3>
+        <p>Trendy western dresses for a stylish look.</p>
+        <div class="old-price">₹1,499</div>
+        <div class="price">₹999</div>
+        <div class="discount">33% OFF</div>
+        <br>
+        <a href="contact.html">Shop Now</a>
+    </div>
+
+    <!-- Men's Offer -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?w=800"
+             alt="Men Shirts Offer">
+        <h3>Men's Shirts</h3>
+        <p>Smart shirts for office and casual occasions.</p>
+        <div class="old-price">₹999</div>
+        <div class="price">₹699</div>
+        <div class="discount">30% OFF</div>
+        <br>
+        <a href="contact.html">Shop Now</a>
+    </div>
+
+    <!-- Kids Offer -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1596870230751-ebdfce98ec42?w=800"
+             alt="Kids Wear Offer">
+        <h3>Kids Collection</h3>
+        <p>Adorable outfits for your little ones.</p>
+        <div class="old-price">₹799</div>
+        <div class="price">₹499</div>
+        <div class="discount">38% OFF</div>
+        <br>
+        <a href="contact.html">Shop Now</a>
+    </div>
+
+    <!-- Nightwear Offer -->
+    <div class="card">
+        <img src="https://deniserae.com/cdn/shop/files/Denise-14.jpg?v=1770166910&width=600"
+             alt="Night Wear Offer">
+        <h3>Night Wear</h3>
+        <p>Soft and comfortable nightwear collections.</p>
+        <div class="old-price">₹699</div>
+        <div class="price">₹399</div>
+        <div class="discount">43% OFF</div>
+        <br>
+        <a href="contact.html">Shop Now</a>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 SIRI FASHION BOUTIQUE | All Rights Reserved</p>
+    <p>Designed with Love by Siri Katakam ❤️</p>
+</footer>
+
+</body>
+</html>

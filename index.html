@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Siri Fashion Boutique</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5f8;
+            color: #333;
+        }
+
+        /* Navigation */
+
+        nav {
+            background-color: #f7a8c4;
+            padding: 22px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #8b1745;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 22px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4a1830;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        }
+
+        /* Hero Section */
+
+        .hero {
+            min-height: 550px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(
+                135deg,
+                #ffe0eb,
+                #f6a6c1
+            );
+        }
+
+        .hero-content h1 {
+            font-size: 55px;
+            color: #8b1745;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero-content a {
+            display: inline-block;
+            background-color: #8b1745;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        .hero-content a:hover {
+            background-color: #c13c70;
+        }
+
+        /* Categories */
+
+        .categories {
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .categories h2 {
+            color: #8b1745;
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .category-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .category {
+            background: white;
+            width: 220px;
+            padding: 35px 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #e8b5c7;
+        }
+
+        .category h3 {
+            color: #8b1745;
+            margin-bottom: 12px;
+        }
+
+        .category a {
+            color: #c13c70;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+
+        footer {
+            background-color: #8b1745;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 750px) {
+            nav {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav>
+        <div class="logo">SIRI FASHION</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Banner -->
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1>Welcome to Siri Fashion Boutique</h1>
+
+            <p>
+                Discover Your Style. Express Your Beauty.
+            </p>
+
+            <a href="women.html">Explore Collection</a>
+
+        </div>
+    </section>
+
+    <!-- Categories -->
+
+    <section class="categories">
+
+        <h2>Explore Our Collections</h2>
+
+        <div class="category-container">
+
+            <div class="category">
+                <h3>Women's Fashion</h3>
+                <p>Elegant styles for every occasion.</p>
+                <br>
+                <a href="women.html">Explore</a>
+            </div>
+
+            <div class="category">
+                <h3>Men's Fashion</h3>
+                <p>Modern looks with confidence.</p>
+                <br>
+                <a href="men.html">Explore</a>
+            </div>
+
+            <div class="category">
+                <h3>Kids Collection</h3>
+                <p>Beautiful outfits for little stars.</p>
+                <br>
+                <a href="kids.html">Explore</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>© 2026 Siri Fashion Boutique | All Rights Reserved</p>
+        <p>Founder & CEO: Siri Katakam</p>
+    </footer>
+
+</body>
+</html>

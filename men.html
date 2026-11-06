@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Men Collection | SIRI FASHION BOUTIQUE</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #333;
+}
+
+header {
+    background: #e75480;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+nav {
+    background: #ffe0eb;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9d174d;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #e75480;
+}
+
+.heading {
+    text-align: center;
+    padding: 35px 15px 20px;
+}
+
+.heading h2 {
+    color: #c2185b;
+    font-size: 30px;
+}
+
+.heading p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 25px 6%;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
+    padding-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #c2185b;
+    margin: 15px 0 8px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #555;
+    margin: 8px;
+}
+
+.price {
+    color: #e75480;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 12px;
+}
+
+.card a {
+    display: inline-block;
+    background: #e75480;
+    color: white;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 25px;
+    margin-top: 8px;
+}
+
+.card a:hover {
+    background: #ad1457;
+}
+
+footer {
+    background: #e75480;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+}
+
+@media (max-width: 500px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SIRI FASHION BOUTIQUE</h1>
+    <p>Style That Makes You Special</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="kids.html">Kids</a>
+    <a href="new-arrivals.html">New Arrivals</a>
+    <a href="offers.html">Offers</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="heading">
+    <h2>Men's Collection</h2>
+    <p>Discover stylish outfits for every occasion</p>
+</section>
+
+<section class="products">
+
+    <!-- Formal Wear -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800"
+             alt="Men Formal Wear">
+        <h3>Formal Wear</h3>
+        <p>Elegant formal outfits for office and business meetings.</p>
+        <div class="price">Starting ₹999</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+    <!-- Casual Wear -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800"
+             alt="Men Casual Wear">
+        <h3>Casual Wear</h3>
+        <p>Comfortable and trendy outfits for everyday style.</p>
+        <div class="price">Starting ₹699</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+    <!-- Shirts -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?w=800"
+             alt="Men Shirts">
+        <h3>Stylish Shirts</h3>
+        <p>Smart and fashionable shirts for every occasion.</p>
+        <div class="price">Starting ₹499</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+    <!-- T-Shirts -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800"
+             alt="Men T Shirts">
+        <h3>T-Shirts</h3>
+        <p>Trendy T-shirts with comfortable fabrics.</p>
+        <div class="price">Starting ₹299</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+    <!-- Jeans -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=800"
+             alt="Men Jeans">
+        <h3>Denim Jeans</h3>
+        <p>Modern and stylish jeans for a cool look.</p>
+        <div class="price">Starting ₹799</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+    <!-- Traditional Wear -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=800"
+             alt="Men Traditional Wear">
+        <h3>Traditional Wear</h3>
+        <p>Ethnic outfits for festivals, weddings and celebrations.</p>
+        <div class="price">Starting ₹1,299</div>
+        <a href="contact.html">Enquire Now</a>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 SIRI FASHION BOUTIQUE | All Rights Reserved</p>
+    <p>Designed with Love by Siri Katakam ❤️</p>
+</footer>
+
+</body>
+</html>

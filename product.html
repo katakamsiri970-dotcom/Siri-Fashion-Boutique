@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Product | Siri Fashion Boutique</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f3ed;
+    color: #222;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 80px;
+    background: #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #d6ad72;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: #d6ad72;
+}
+
+/* PRODUCT SECTION */
+
+.product-section {
+    padding: 130px 8% 80px;
+}
+
+.product-container {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+}
+
+/* MAIN IMAGE */
+
+.main-image {
+    width: 100%;
+    height: 600px;
+
+    background: white;
+    overflow: hidden;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* DETAILS */
+
+.category {
+    color: #b28750;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.product-details {
+    padding-top: 30px;
+}
+
+.product-details h1 {
+    font-size: 44px;
+
+    margin: 15px 0;
+}
+
+.price {
+    color: #b28750;
+
+    font-size: 27px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.description {
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+/* SIZE */
+
+.size-title {
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.sizes {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.size {
+    width: 50px;
+    height: 45px;
+
+    background: white;
+
+    border: 1px solid #ccc;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.size:hover,
+.size.selected {
+    background: #111;
+    color: white;
+}
+
+/* CART */
+
+.cart-btn {
+    width: 100%;
+
+    padding: 17px;
+
+    background: #111;
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.cart-btn:hover {
+    background: #d6ad72;
+    color: #111;
+}
+
+/* RELATED */
+
+.related {
+    background: white;
+
+    padding: 80px 8%;
+}
+
+.related-title {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.related-title p {
+    color: #b28750;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.related-title h2 {
+    font-size: 38px;
+
+    margin-top: 10px;
+}
+
+.related-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.related-card {
+    background: #f8f3ed;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.related-card:hover {
+    transform: translateY(-8px);
+}
+
+.related-card img {
+    width: 100%;
+
+    height: 330px;
+
+    object-fit: cover;
+}
+
+.related-info {
+    padding: 20px;
+}
+
+.related-info h3 {
+    font-size: 17px;
+
+    margin-bottom: 8px;
+}
+
+.related-price {
+    color: #b28750;
+
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    background: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px;
+}
+
+footer span {
+    color: #d6ad72;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header class="navbar">
+
+<div class="logo">
+SIRI <span>FASHION BOUTIQUE</span>
+</div>
+
+<nav class="nav-links">
+
+<a href="index.html">HOME</a>
+
+<a href="about.html">ABOUT</a>
+
+<a href="women.html">WOMEN</a>
+
+<a href="men.html">MEN</a>
+
+<a href="kids.html">KIDS</a>
+
+<a href="new-arrivals.html">NEW ARRIVALS</a>
+
+<a href="offers.html">OFFERS</a>
+
+<a href="contact.html">CONTACT</a>
+
+</nav>
+
+</header>
+
+
+<!-- PRODUCT -->
+
+<section class="product-section">
+
+<div class="product-container">
+
+
+<div class="main-image">
+
+<img id="mainImage" src="" alt="Product">
+
+</div>
+
+
+<div class="product-details">
+
+<div class="category" id="category"></div>
+
+<h1 id="productName"></h1>
+
+<div class="price" id="productPrice"></div>
+
+<p class="description" id="productDescription"></p>
+
+
+<div class="size-title">
+SELECT SIZE
+</div>
+
+
+<div class="sizes">
+
+<div class="size" onclick="selectSize(this)">
+S
+</div>
+
+<div class="size" onclick="selectSize(this)">
+M
+</div>
+
+<div class="size" onclick="selectSize(this)">
+L
+</div>
+
+<div class="size" onclick="selectSize(this)">
+XL
+</div>
+
+</div>
+
+
+<button class="cart-btn" onclick="addToCart()">
+ADD TO CART
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- RELATED PRODUCTS -->
+
+<section class="related">
+
+<div class="related-title">
+
+<p id="relatedCategory">
+YOU MAY ALSO LIKE
+</p>
+
+<h2>
+More Similar Products
+</h2>
+
+</div>
+
+
+<div
+class="related-grid"
+id="relatedProducts">
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 Siri
+<span>Fashion Boutique</span>
+| All Rights Reserved
+
+</footer>
+
+
+<script>
+
+/* =========================================
+   PRODUCT DATABASE
+========================================= */
+
+const products = {
+
+
+/* ---------- FLORAL ---------- */
+
+floral1: {
+
+category: "FLORAL DRESSES",
+
+name: "Floral Summer Dress",
+
+price: "₹1,899",
+
+image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Beautiful floral summer dress with an elegant design. Perfect for casual outings and summer occasions."
+
+},
+
+
+floral2: {
+
+category: "FLORAL DRESSES",
+
+name: "Pink Floral Dress",
+
+price: "₹2,099",
+
+image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=900&q=85",
+
+description:
+"A stylish pink floral dress designed for a fresh and elegant appearance."
+
+},
+
+
+floral3: {
+
+category: "FLORAL DRESSES",
+
+name: "Elegant Floral Dress",
+
+price: "₹2,299",
+
+image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Elegant floral outfit with a beautiful silhouette for special occasions."
+
+},
+
+
+floral4: {
+
+category: "FLORAL DRESSES",
+
+name: "Printed Floral Dress",
+
+price: "₹1,999",
+
+image: "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Comfortable printed floral dress for a stylish everyday look."
+
+},
+
+
+floral5: {
+
+category: "FLORAL DRESSES",
+
+name: "Premium Floral Dress",
+
+price: "₹2,499",
+
+image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Premium floral fashion dress with an elegant and sophisticated design."
+
+},
+
+
+/* ---------- NIGHT ---------- */
+
+night1: {
+
+category: "NIGHT DRESSES",
+
+name: "Black Night Dress",
+
+price: "₹1,599",
+
+image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Elegant black night dress designed for comfort and a beautiful evening look."
+
+},
+
+
+night2: {
+
+category: "NIGHT DRESSES",
+
+name: "Satin Night Dress",
+
+price: "₹1,899",
+
+image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Soft satin night dress with a luxurious and comfortable finish."
+
+},
+
+
+night3: {
+
+category: "NIGHT DRESSES",
+
+name: "Silk Night Dress",
+
+price: "₹2,199",
+
+image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Premium silk night dress designed with a graceful and comfortable fit."
+
+},
+
+
+night4: {
+
+category: "NIGHT DRESSES",
+
+name: "Luxury Night Dress",
+
+price: "₹2,399",
+
+image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Luxury night wear designed for an elegant and comfortable experience."
+
+},
+
+
+night5: {
+
+category: "NIGHT DRESSES",
+
+name: "Comfort Night Dress",
+
+price: "₹1,499",
+
+image: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Comfortable and stylish night dress suitable for everyday relaxation."
+
+},
+
+
+/* ---------- PARTY ---------- */
+
+party1: {
+
+category: "PARTY WEAR",
+
+name: "Elegant Party Dress",
+
+price: "₹2,499",
+
+image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Elegant party dress perfect for celebrations and special occasions."
+
+},
+
+
+party2: {
+
+category: "PARTY WEAR",
+
+name: "Classic Party Dress",
+
+price: "₹2,199",
+
+image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Classic party dress with a stylish and sophisticated design."
+
+},
+
+
+party3: {
+
+category: "PARTY WEAR",
+
+name: "Luxury Party Dress",
+
+price: "₹2,799",
+
+image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Luxury party wear for a glamorous and elegant appearance."
+
+},
+
+
+party4: {
+
+category: "PARTY WEAR",
+
+name: "Evening Party Dress",
+
+price: "₹2,599",
+
+image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Beautiful evening party dress created for stylish occasions."
+
+},
+
+
+/* ---------- SAREES ---------- */
+
+saree1: {
+
+category: "SAREES",
+
+name: "Elegant Silk Saree",
+
+price: "₹3,499",
+
+image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Elegant silk saree with a timeless traditional appearance."
+
+},
+
+
+saree2: {
+
+category: "SAREES",
+
+name: "Designer Saree",
+
+price: "₹3,999",
+
+image: "https://images.unsplash.com/photo-1583391733956-6c78276477e0?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Beautiful designer saree for weddings and special occasions."
+
+},
+
+
+saree3: {
+
+category: "SAREES",
+
+name: "Traditional Saree",
+
+price: "₹2,999",
+
+image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Traditional saree with an elegant and graceful look."
+
+},
+
+
+saree4: {
+
+category: "SAREES",
+
+name: "Premium Saree",
+
+price: "₹4,299",
+
+image: "https://images.unsplash.com/photo-1610189012906-4c4d9e1f7d52?auto=format&fit=crop&w=900&q=85",
+
+description:
+"Premium saree designed for elegant celebrations."
+
+}
+
+};
+
+
+/* =========================================
+   GET PRODUCT FROM URL
+========================================= */
+
+const urlParams =
+new URLSearchParams(window.location.search);
+
+const productId =
+urlParams.get("product");
+
+
+const currentProduct =
+products[productId] || products.floral1;
+
+
+/* =========================================
+   SHOW CURRENT PRODUCT
+========================================= */
+
+document.getElementById("mainImage").src =
+currentProduct.image;
+
+document.getElementById("productName").innerText =
+currentProduct.name;
+
+document.getElementById("productPrice").innerText =
+currentProduct.price;
+
+document.getElementById("category").innerText =
+currentProduct.category;
+
+document.getElementById("productDescription").innerText =
+currentProduct.description;
+
+document.getElementById("relatedCategory").innerText =
+"MORE " + currentProduct.category;
+
+
+/* =========================================
+   FIND SAME CATEGORY PRODUCTS
+========================================= */
+
+const relatedContainer =
+document.getElementById("relatedProducts");
+
+
+for (let id in products) {
+
+    if (
+        products[id].category === currentProduct.category
+        &&
+        id !== productId
+    ) {
+
+        const product =
+        products[id];
+
+
+        const card =
+        document.createElement("div");
+
+        card.className =
+        "related-card";
+
+
+        card.onclick = function () {
+
+            window.location.href =
+            "product.html?product=" + id;
+
+        };
+
+
+        card.innerHTML = `
+
+            <img
+            src="${product.image}"
+            alt="${product.name}">
+
+            <div class="related-info">
+
+                <h3>
+                    ${product.name}
+                </h3>
+
+                <div class="related-price">
+                    ${product.price}
+                </div>
+
+            </div>
+
+        `;
+
+
+        relatedContainer.appendChild(card);
+
+    }
+
+}
+
+
+/* =========================================
+   SIZE
+========================================= */
+
+function selectSize(element) {
+
+    document
+    .querySelectorAll(".size")
+    .forEach(function(size) {
+
+        size.classList.remove("selected");
+
+    });
+
+
+    element.classList.add("selected");
+
+}
+
+
+/* =========================================
+   CART
+========================================= */
+
+function addToCart() {
+
+    const selectedSize =
+    document.querySelector(".size.selected");
+
+
+    if (!selectedSize) {
+
+        alert("Please select a size first!");
+
+        return;
+
+    }
+
+
+    alert(
+        currentProduct.name +
+        " added to cart!\nSize: " +
+        selectedSize.innerText
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
